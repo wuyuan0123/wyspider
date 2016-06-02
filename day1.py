@@ -6,31 +6,23 @@ print r.text
 img_patten = '<img src="https'
 start, end = 0, 0
 count = 0
-for i in range(0, len(r.text)):
-    x = r.text[i:i+len(img_patten)]
-    if x == img_patten:
-        # print x
-        for j in range(i, len(r.text)):
-            if r.text[j] == '"':
-                if count == 0:
-                    start = j
-                    count = 1
-                elif count == 1:
-                    xxx = r.text[start:j]
-                    print xxx
-                    count = 0
-                    break
 
 
+def day1():
+    for i in range(0, len(r.text)):
+        x = r.text[i:i+len(img_patten)]
+        if x == img_patten:
+            # print x
+            for j in range(i, len(r.text)):
+                if r.text[j] == '"':
+                    if count == 0:
+                        start = j
+                        count = 1
+                    elif count == 1:
+                        xxx = r.text[start:j]
+                        print xxx
+                        count = 0
+                        break
 
+day1()
 
-
-
-
-
-
-
-
-
-if __name__ == "__main__":
-    pass
