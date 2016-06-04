@@ -25,6 +25,3 @@ for i in range(len(r.text)):
 
 for i in img_list:
     print i
-
-
-
