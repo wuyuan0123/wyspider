@@ -23,8 +23,16 @@ def spider(url):
                         break
             if result.endswith("jpg"):
                 img_list.append(result)
+    return img_list
 
-    for i in img_list:
-        print i
 
-print spider('https://movie.douban.com/chart')
+def dump_url(urls):
+    for url in urls:
+        print url
+
+urls = spider('https://movie.douban.com/chart')
+print(urls) #print list
+dump_url(urls) #print string
+
+
+
