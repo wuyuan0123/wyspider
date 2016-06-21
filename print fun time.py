@@ -33,4 +33,4 @@ print("time = %.6f sec" % (t2-t1))
 print spider('https://movie.douban.com/chart')
 t3 = time.time()
 print("time = %.6f sec" % (t3-t1))
-print("time = %.6f sec" % (t3-t2))
+print("time = %.6f sec" % (t3-t2)) # t3-t2 = t3 -t1 time = 6.135000 sec
