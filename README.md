@@ -8,6 +8,15 @@ day1：申请github账号，学会使用git简单命令，git clone， git pull�
 day2：将查找电影海报图片的url功能组织成一个函数，输入网页url，返回海报图片url列表，并且打印出函数的执行时间。
 
 day3：熟悉python正则表达式，使用正则表达式改进搜索函数，并打印改进后的函数执行时间
+```
+请尝试写一个验证Email地址的正则表达式。版本一应该可以验证出类似的Email：
+
+someone@gmail.com
+bill.gates@microsoft.com
+版本二可以验证并提取出带名字的Email地址：
+
+<Tom Paris> tom@voyager.org
+```
 
 day4：熟悉bs4 模块使用，使用bs4 来改进搜索函数，并打印改进后的函数执行时间
 
